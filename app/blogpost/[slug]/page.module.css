@@ -1,0 +1,146 @@
+.page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 60px 20px;
+}
+
+.article {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.category {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #dbeafe;
+  color: #2563eb;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 20px;
+  word-break: break-word;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.imageContainer {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.imagePlaceholder {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #dbeafe,
+    #e0e7ff
+  );
+  border-radius: 12px;
+  color: #4b5563;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.content {
+  color: #374151;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.content p {
+  margin-bottom: 24px;
+}
+
+.content h2 {
+  color: #111827;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.content ul {
+  margin: 20px 0 30px;
+  padding-left: 30px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.content blockquote {
+  margin: 35px 0;
+  padding: 20px 25px;
+  border-left: 5px solid #2563eb;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 20px;
+  font-style: italic;
+  border-radius: 6px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .page {
+    padding: 30px 15px;
+  }
+
+  .article {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .imagePlaceholder {
+    height: 250px;
+  }
+
+  .content {
+    font-size: 17px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .article {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .imagePlaceholder {
+    height: 200px;
+  }
+
+  .content h2 {
+    font-size: 25px;
+  }
+}
